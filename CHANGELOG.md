@@ -1,6 +1,15 @@
 # Changelog
 
 ## [Unreleased]
+Release for 1.0! \
+Fixed keepsakes icons. \
+!!! Added more clear times for hermes keepsake for the 1.0 patch. \
+!!! Added xxxx new keepsakes from hades 1 - specifically to be used in conjuction to the Hades 1 in Hades 2 mod.
+!!! Codex for all keepsakes!
+!!! Add config to see if people want to gift - hades 1 npcs or in general
+!!! Redo configs etc etc in code too
+!!! Test Hermes etc
+!!! Max Icons - Especially for sisy, patrol, eurydice
 
 ## [2.0.2] - 2024-06-11
 
@@ -32,15 +41,7 @@ Hopefully? fixing weird file names
 
 ## [1.0.0] - 2024-05-30
 
-Added 3 God Keepsakes from Hades1, Hermes, Thanatos and Persephone
-
-## [Planned]
-
-\-- Orpheus Keepsake (Game is more range based now) <br>
-\-- Maybe Sisyphus, bloated boon pool so it might be easier for it to be viable <br>
-\-- New Keepsakes from New Gods? <br>
-\-- Boons for Hermes <br>
-\-- ImGui in general or Config for clear times 
+Added 3 God Keepsakes from Hades 1, Hermes, Thanatos and Persephone
 
 [unreleased]: https://github.com/zanncdwbl/zannc-KeepsakePort/compare/2.0.2...HEAD
 [2.0.2]: https://github.com/zanncdwbl/zannc-KeepsakePort/compare/2.0.1...2.0.2

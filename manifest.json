@@ -1,7 +1,7 @@
 {
     "namespace": "zannc",
     "name": "KeepsakePort",
-    "description": "Porting some Keepsakes over from Hades 1 to Hades 2. Currently added Thanatos, Persephone, Hermes. Now with Icons!",
+    "description": "Porting some Keepsakes over from Hades 1 to Hades 2.",
     "version_number": "1.0.1",
     "dependencies": [
         "SGG_Modding-ModUtil-4.0.0",
