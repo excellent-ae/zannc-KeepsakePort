@@ -1,6 +1,18 @@
 # Changelog
 
 ## [Unreleased]
+Release for 1.0! \
+Fixed keepsakes icons. \
+Added a Timer to Hermes Keepsake. \
+Added Clear text to Hermes Keepsake. \
+Added Max icons for keepsakes - Can be configured to have to max out thanatos scythe etc (Refer to readme to find out what you need!). \
+Added 3 new keepsakes from Hades 1 as an addon mod (automatic dependency). \
+Thanatos now gains bonus on small field encounters being cleared.
+
+!!! Added more clear times for hermes keepsake for the 1.0 patch. \
+
+!Check keepsakes for surface runs and hades biomes mod
+
 
 ## [2.0.2] - 2024-06-11
 
@@ -32,15 +44,7 @@ Hopefully? fixing weird file names
 
 ## [1.0.0] - 2024-05-30
 
-Added 3 God Keepsakes from Hades1, Hermes, Thanatos and Persephone
-
-## [Planned]
-
-\-- Orpheus Keepsake (Game is more range based now) <br>
-\-- Maybe Sisyphus, bloated boon pool so it might be easier for it to be viable <br>
-\-- New Keepsakes from New Gods? <br>
-\-- Boons for Hermes <br>
-\-- ImGui in general or Config for clear times 
+Added 3 God Keepsakes from Hades 1, Hermes, Thanatos and Persephone
 
 [unreleased]: https://github.com/zanncdwbl/zannc-KeepsakePort/compare/2.0.2...HEAD
 [2.0.2]: https://github.com/zanncdwbl/zannc-KeepsakePort/compare/2.0.1...2.0.2

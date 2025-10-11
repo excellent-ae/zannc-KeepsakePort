@@ -1,18 +1,49 @@
-TraitTextFile = rom.path.combine(rom.paths.Content, 'Game/Text/en/TraitText.en.sjson')
-HelpTextFile = rom.path.combine(rom.paths.Content, 'Game/Text/en/HelpText.en.sjson')
-GUIAnimationsFile = rom.path.combine(rom.paths.Content, 'Game/Animations/GUIAnimations.sjson')
+TraitTextFile = rom.path.combine(rom.paths.Content, "Game/Text/en/TraitText.en.sjson")
+HelpTextFile = rom.path.combine(rom.paths.Content, "Game/Text/en/HelpText.en.sjson")
+GUIBoonsVFXFile = rom.path.combine(rom.paths.Content, "Game/Animations/GUI_Boons_VFX.sjson")
+GUIHUDVFXFile = rom.path.combine(rom.paths.Content, "Game/Animations/GUI_HUD_VFX.sjson")
 
 -- Order for TraitText SJSON
 Order = {
-    'Id',
-    'InheritFrom',
-    'DisplayName',
-    'Description',
+	"Id",
+	"InheritFrom",
+	"DisplayName",
+	"Description",
 }
 
--- Order for GUIAnimationsFile
+-- Order for HelpTextFile
+HelpTextOrder = {
+	"Id",
+	"DisplayName",
+}
+
+-- Order for GUIBoonsVFXFile
 IconOrder = {
-    'Name',
-    'InheritFrom',
-    'FilePath',
+	"Name",
+	"InheritFrom",
+	"FilePath",
+}
+
+HUDOrder = {
+	"Name",
+	"FilePath",
+	"GroupName",
+	"EndFrame",
+	"NumFrames",
+	"PlaySpeed",
+	"StartFrame",
+	"Scale",
+	"OffsetY",
+	"OffsetX",
+	"PlayBackwards",
+	"AddColor",
+	"FlipHorizontal",
+	"Red",
+	"Green",
+	"Blue",
+	"VisualFxIntervalMin",
+	"VisualFxIntervalMax",
+	"VisualFx",
+	"Loop",
+	"ChainTo",
 }

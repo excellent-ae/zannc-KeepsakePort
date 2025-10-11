@@ -5,18 +5,20 @@ schemaVersion = "0.0.1"
 [package]
 namespace = "zannc"
 name = "KeepsakePort"
-versionNumber = "2.0.2"
-description = "Porting some Keepsakes over from Hades 1 to Hades 2. Currently added Thanatos, Persephone, Hermes. Now with Icons! Configuration for Thanatos and Hermes Keepsakes."
+versionNumber = "2.5.0"
+description = "Porting Keepsakes over from Hades 1 to Hades 2."
 websiteUrl = "https://github.com/zanncdwbl/zannc-KeepsakePort"
 containsNsfwContent = false
 
 [package.dependencies]
-SGG_Modding-ModUtil = "4.0.0"
-Hell2Modding-Hell2Modding = "1.0.40"
-SGG_Modding-SJSON = "1.0.0"
+Hell2Modding-Hell2Modding = "1.0.67"
+SGG_Modding-ModUtil = "4.0.1"
+LuaENVY-ENVY = "1.2.0"
 SGG_Modding-ReLoad = "1.0.2"
-SGG_Modding-ENVY = "1.1.0"
-
+SGG_Modding-SJSON = "1.0.0"
+SGG_Modding-Chalk = "2.1.1"
+zannc-KeepsakeExtender = "1.0.0"
+zannc-SharedKeepsakePort = "1.0.0"
 
 [build]
 icon = "./icon.png"

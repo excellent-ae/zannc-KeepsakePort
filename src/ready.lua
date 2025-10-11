@@ -5,16 +5,31 @@ local package = rom.path.combine(_PLUGIN.plugins_data_mod_folder_path, _PLUGIN.g
 -- Example Output of Package Path:
 -- C:\Program Files (x86)\Steam\steamapps\common\Hades II\Ship\ReturnOfModding\plugins_data\zannc-KeepsakePort\zannc-KeepsakePort
 modutil.mod.Path.Wrap("SetupMap", function(base)
-    LoadPackages({ Name = package })
-    base()
+	game.LoadPackages({ Name = package })
+	base()
+end)
+
+modutil.mod.Path.Wrap("DamageHero", function(base, victim, triggerArgs)
+	DamageHero_wrap(base, victim, triggerArgs)
+	base(victim, triggerArgs)
+end)
+
+modutil.mod.Path.Wrap("TraitUIActivateTraits", function(base, args)
+	TraitUIActivateTraits_Wrap(base, args)
+	base(args)
+end)
+
+modutil.mod.Path.Wrap("StartEncounterEffects", function(base, encounter)
+	StartEncounterEffects_wrap(base, encounter)
+	base(encounter)
 end)
 
 modutil.mod.Path.Wrap("EndEncounterEffects", function(base, currentRun, currentRoom, currentEncounter)
-    EndEncounterEffects_wrap(base, currentRun, currentRoom, currentEncounter)
-    base(currentRun, currentRoom, currentEncounter)
+	EndEncounterEffects_wrap(base, currentRun, currentRoom, currentEncounter)
+	base(currentRun, currentRoom, currentEncounter)
 end)
 
-modutil.mod.Path.Wrap("StartEncounterEffects", function(base, currentRun)
-    StartEncounterEffects_wrap(base, currentRun)
-    base(currentRun)
-end)
+-- modutil.mod.Path.Wrap("CalculateDamageMultipliers", function(base, attacker, victim, weaponData, triggerArgs)
+-- 	CalculateDamageMultipliers_Wrap(base, attacker, victim, weaponData, triggerArgs)
+-- 	base(attacker, victim, weaponData, triggerArgs)
+-- end)
