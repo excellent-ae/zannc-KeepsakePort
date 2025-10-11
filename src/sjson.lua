@@ -1,6 +1,7 @@
 TraitTextFile = rom.path.combine(rom.paths.Content, "Game/Text/en/TraitText.en.sjson")
 HelpTextFile = rom.path.combine(rom.paths.Content, "Game/Text/en/HelpText.en.sjson")
 GUIBoonsVFXFile = rom.path.combine(rom.paths.Content, "Game/Animations/GUI_Boons_VFX.sjson")
+GUIHUDVFXFile = rom.path.combine(rom.paths.Content, "Game/Animations/GUI_HUD_VFX.sjson")
 
 -- Order for TraitText SJSON
 Order = {
@@ -21,4 +22,28 @@ IconOrder = {
 	"Name",
 	"InheritFrom",
 	"FilePath",
+}
+
+HUDOrder = {
+	"Name",
+	"FilePath",
+	"GroupName",
+	"EndFrame",
+	"NumFrames",
+	"PlaySpeed",
+	"StartFrame",
+	"Scale",
+	"OffsetY",
+	"OffsetX",
+	"PlayBackwards",
+	"AddColor",
+	"FlipHorizontal",
+	"Red",
+	"Green",
+	"Blue",
+	"VisualFxIntervalMin",
+	"VisualFxIntervalMax",
+	"VisualFx",
+	"Loop",
+	"ChainTo",
 }

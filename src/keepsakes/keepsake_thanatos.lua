@@ -7,12 +7,22 @@ function CreateKeepsake_Thanatos()
 
 	-- Creating Gift Data
 	game.GiftData.NPC_Thanatos_01 = {
+		MaxedRequirement = {},
+		MaxedIcon = "Keepsake_Thanatos_Corner",
+		MaxedSticker = "Keepsake_Thanatos",
+
 		[1] = {
 			Gift = "PerfectClearDamageBonusKeepsake",
 		},
 		InheritFrom = { "DefaultGiftData" },
 		Name = "PerfectClearDamageBonusKeepsake",
 	}
+	if config.enableGifting then
+		game.GiftData.NPC_Thanatos_01.MaxedRequirement = { {
+			Path = { "GameState", "WeaponsUnlocked" },
+			HasAny = { "AxePerfectCriticalAspect5" },
+		} }
+	end
 
 	-- Creating Keepsake Data
 	game.TraitData.PerfectClearDamageBonusKeepsake = {
@@ -38,6 +48,7 @@ function CreateKeepsake_Thanatos()
 			Common = "Frame_Keepsake_Rank1",
 			Rare = "Frame_Keepsake_Rank2",
 			Epic = "Frame_Keepsake_Rank3",
+			Heroic = "Frame_Keepsake_Rank4",
 		},
 
 		CustomRarityLevels = {
@@ -81,10 +92,20 @@ function CreateKeepsake_Thanatos()
 
 		SignOffData = {
 			{
+				GameStateRequirements = {},
+				Text = "SignoffThanatos_Max",
+			},
+			{
 				Text = "SignoffThanatos",
 			},
 		},
 	}
+	if config.enableGifting then
+		game.game.TraitData.PerfectClearDamageBonusKeepsake.SignOffData[0].GameStateRequirements = { {
+			Path = { "GameState", "WeaponsUnlocked" },
+			HasAny = { "AxePerfectCriticalAspect5" },
+		} }
+	end
 end
 
 -- =================================================
@@ -102,7 +123,7 @@ local keepsakerack_thanatos = sjson.to_object({
 	Id = "PerfectClearDamageBonusKeepsake",
 	InheritFrom = "BaseBoonMultiline",
 	DisplayName = "Pierced Butterfly",
-	Description = "Gain {#UpgradeFormat}{$TooltipData.ExtractData.TooltipPerfectClearBonus:P} {#Prev}damage each time you clear an {$Keywords.EncounterAlt} without taking damage.",
+	Description = "Gain {#UpgradeFormat}{$TooltipData.ExtractData.TooltipPerfectClearBonus:P} {#Prev}increased damage each time you clear an {$Keywords.EncounterAlt} without taking damage.",
 }, Order)
 
 -- From which Character
@@ -111,12 +132,10 @@ local signoff_thanatos = sjson.to_object({
 	DisplayName = "From Thanatos",
 }, Order)
 
--- Icon JSON data
-local keepsakeicon_thanatos = sjson.to_object({
-	Name = "Pierced_Butterfly",
-	InheritFrom = "KeepsakeIcon",
-	FilePath = rom.path.combine(_PLUGIN.guid, "GUI\\Screens\\AwardMenu\\Pierced_Butterfly"),
-}, IconOrder)
+local signoff_thanatosmax = sjson.to_object({
+	Id = "SignoffThanatos_Max",
+	DisplayName = "From {#AwardMaxFormat}Thanatos{#Prev}; you share a {#AwardMaxFormat}Undying Bond{#Prev}.{!Icons.ObjectiveSeparatorDark}With whom should Death belong, if not with Blood, with Life?",
+}, Order)
 
 -- Clear Message in room
 local helptext_sjson = sjson.to_object({
@@ -124,16 +143,38 @@ local helptext_sjson = sjson.to_object({
 	DisplayName = "Clear! {#UpgradeFormat}{$TempTextData.ExtractData.TooltipPerfectClearBonus:P}",
 }, HelpTextOrder)
 
+-- Icon JSON data
+local keepsakeicon_thanatos = sjson.to_object({
+	Name = "Pierced_Butterfly",
+	InheritFrom = "KeepsakeIcon",
+	FilePath = rom.path.combine(_PLUGIN.guid, "GUI\\Screens\\AwardMenu\\Pierced_Butterfly"),
+}, IconOrder)
+
+local keepsakemaxCorner_thanatos = sjson.to_object({
+	Name = "Keepsake_Thanatos_Corner",
+	InheritFrom = "KeepsakeMax_Corner",
+	FilePath = rom.path.combine(_PLUGIN.guid, "GUI\\Screens\\AwardMenu\\KeepsakeMaxGift\\Thanatos"),
+}, IconOrder)
+
+local keepsakemax_thanatos = sjson.to_object({
+	Name = "Keepsake_Thanatos",
+	InheritFrom = "KeepsakeMax",
+	FilePath = rom.path.combine(_PLUGIN.guid, "GUI\\Screens\\AwardMenu\\KeepsakeMaxGift\\Thanatos_02"),
+}, IconOrder)
+
 -- Inserting into SJSON
 sjson.hook(TraitTextFile, function(data)
 	table.insert(data.Texts, keepsake_thanatos)
 	table.insert(data.Texts, keepsakerack_thanatos)
 	table.insert(data.Texts, signoff_thanatos)
+	table.insert(data.Texts, signoff_thanatosmax)
 end)
 
 -- Insert for Icons
 sjson.hook(GUIBoonsVFXFile, function(data)
 	table.insert(data.Animations, keepsakeicon_thanatos)
+	table.insert(data.Animations, keepsakemaxCorner_thanatos)
+	table.insert(data.Animations, keepsakemax_thanatos)
 end)
 
 -- Insert for Text

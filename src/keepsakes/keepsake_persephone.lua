@@ -7,12 +7,19 @@ function CreateKeepsake_Persephone()
 
 	-- Creating Gift Data
 	game.GiftData.NPC_Persephone_01 = {
+		MaxedRequirement = {},
+		MaxedIcon = "Keepsake_Persephone_Corner",
+		MaxedSticker = "Keepsake_Persephone",
+
 		[1] = {
 			Gift = "ChamberStackTrait",
 		},
 		InheritFrom = { "DefaultGiftData" },
 		Name = "ChamberStackTrait",
 	}
+	if config.enableGifting then
+		game.GiftData.NPC_Persephone_01.MaxedRequirement = { { PathTrue = { "GameState", "TextLinesRecord", "HadesWithPersephoneGift06" } } }
+	end
 
 	-- Creating Keepsake Data
 	game.TraitData.ChamberStackTrait = {
@@ -37,9 +44,15 @@ function CreateKeepsake_Persephone()
 			Common = "Frame_Keepsake_Rank1",
 			Rare = "Frame_Keepsake_Rank2",
 			Epic = "Frame_Keepsake_Rank3",
+			Heroic = "Frame_Keepsake_Rank4",
 		},
 
-		CustomRarityLevels = { "TraitLevel_Keepsake1", "TraitLevel_Keepsake2", "TraitLevel_Keepsake3", "TraitLevel_Keepsake4" },
+		CustomRarityLevels = {
+			"TraitLevel_Keepsake1",
+			"TraitLevel_Keepsake2",
+			"TraitLevel_Keepsake3",
+			"TraitLevel_Keepsake4",
+		},
 
 		RarityLevels = {
 			Common = {
@@ -71,14 +84,22 @@ function CreateKeepsake_Persephone()
 			ExtractAs = "TooltipRoomInterval",
 		} },
 
-		SignOffData = { {
-			Text = "SignoffPersephone",
-		} },
+		SignOffData = {
+			{
+				GameStateRequirements = {},
+				Text = "SignoffPersephone_Max",
+			},
+			{
+				Text = "SignoffPersephone",
+			},
+		},
 	}
+	if config.enableGifting then
+		game.TraitData.ChamberStackTrait.SignOffData[0].GameStateRequirements = { {
+			PathTrue = { "GameState", "TextLinesRecord", "HadesWithPersephoneGift06" },
+		} }
+	end
 end
-
--- Call the Function
-CreateKeepsake_Persephone()
 
 -- =================================================
 --                Persephone SJSON
@@ -97,6 +118,11 @@ local signoff_persephone = sjson.to_object({
 	DisplayName = "From Persephone",
 }, Order)
 
+local signoff_persephonemax = sjson.to_object({
+	Id = "SignoffPersephone_Max",
+	DisplayName = "From {#AwardMaxFormat}Persephone{#Prev}; you share a {#AwardMaxFormat}Growing Bond{#Prev}.{!Icons.ObjectiveSeparatorDark}The dead live on in the underworld, and her nurturing instinct there also thrives.",
+}, Order)
+
 -- Icon JSON data
 local keepsakeicon_persephone = sjson.to_object({
 	Name = "Pom_Blossom",
@@ -104,13 +130,31 @@ local keepsakeicon_persephone = sjson.to_object({
 	FilePath = rom.path.combine(_PLUGIN.guid, "GUI\\Screens\\AwardMenu\\Pom_Blossom"),
 }, IconOrder)
 
+local keepsakemaxCorner_persephone = sjson.to_object({
+	Name = "Keepsake_Persephone_Corner",
+	InheritFrom = "KeepsakeMax_Corner",
+	FilePath = rom.path.combine(_PLUGIN.guid, "GUI\\Screens\\AwardMenu\\KeepsakeMaxGift\\Persephone"),
+}, IconOrder)
+
+local keepsakemax_persephone = sjson.to_object({
+	Name = "Keepsake_Persephone",
+	InheritFrom = "KeepsakeMax",
+	FilePath = rom.path.combine(_PLUGIN.guid, "GUI\\Screens\\AwardMenu\\KeepsakeMaxGift\\Persephone_02"),
+}, IconOrder)
+
 -- Inserting into SJSON
 sjson.hook(TraitTextFile, function(data)
 	table.insert(data.Texts, keepsakerack_persephone)
 	table.insert(data.Texts, signoff_persephone)
+	table.insert(data.Texts, signoff_persephonemax)
 end)
 
 -- Insert for Icons
 sjson.hook(GUIBoonsVFXFile, function(data)
 	table.insert(data.Animations, keepsakeicon_persephone)
+	table.insert(data.Animations, keepsakemaxCorner_persephone)
+	table.insert(data.Animations, keepsakemax_persephone)
 end)
+
+-- Call the Function
+CreateKeepsake_Persephone()

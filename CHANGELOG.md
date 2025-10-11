@@ -3,13 +3,16 @@
 ## [Unreleased]
 Release for 1.0! \
 Fixed keepsakes icons. \
+Added a Timer to Hermes Keepsake. \
+Added Clear text to Hermes Keepsake. \
+Added Max icons for keepsakes - Can be configured to have to max out thanatos scythe etc (Refer to readme to find out what you need!). \
+Added 3 new keepsakes from Hades 1 as an addon mod (automatic dependency). \
+Thanatos now gains bonus on small field encounters being cleared.
+
 !!! Added more clear times for hermes keepsake for the 1.0 patch. \
-!!! Added xxxx new keepsakes from hades 1 - specifically to be used in conjuction to the Hades 1 in Hades 2 mod.
-!!! Codex for all keepsakes!
-!!! Add config to see if people want to gift - hades 1 npcs or in general
-!!! Redo configs etc etc in code too
-!!! Test Hermes etc
-!!! Max Icons - Especially for sisy, patrol, eurydice
+
+!Check keepsakes for surface runs and hades biomes mod
+
 
 ## [2.0.2] - 2024-06-11
 

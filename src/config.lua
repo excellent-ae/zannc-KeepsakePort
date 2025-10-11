@@ -1,7 +1,7 @@
 ---@meta zannc-KeepsakePort-config
 local config = {
 	enabled = true,
-	forcedGifting = false,
+	enableGifting = false,
 
 	Thanatos = {
 		Enabled = true,
