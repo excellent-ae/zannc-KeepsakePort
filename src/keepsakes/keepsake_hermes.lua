@@ -230,8 +230,8 @@ game.EncounterData.BossScylla01.FastClearThreshold = 85 -- Scylla Encounters
 game.EncounterData.GeneratedAnomalyBase.FastClearThreshold = 60 -- Base Encounter
 
 -- Fields Region
-game.EncounterData.GeneratedH_Passive.FastClearThreshold = 40 -- Field Cage Encounters
-game.EncounterData.GeneratedH_PassiveSmall.FastClearThreshold = 30 -- Small Field Cage Encounters
+game.EncounterData.GeneratedH_Passive.FastClearThreshold = 70 -- Field Cage Encounters
+game.EncounterData.GeneratedH_PassiveSmall.FastClearThreshold = 60 -- Small Field Cage Encounters
 game.EncounterData.MiniBossLamia.FastClearThreshold = 55 -- Lamia/Snake Thing Encounters
 game.EncounterData.MiniBossVampire.FastClearThreshold = 70 -- Vampire Thing Encounters
 game.EncounterData.BossInfestedCerberus01.FastClearThreshold = 100 -- Cerberus Boss Encounters
