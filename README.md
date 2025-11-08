@@ -15,7 +15,6 @@ Porting Keepsakes over from Hades 1 to Hades 2.<br>
     - Configuration options for all keepsakes!
 
 ## Gifting Options
-    - To max out Thanatos, you need to level the Moonstone Axe to level 5
     - Hermes functions the same as the game default.
     - Persephone functions the same as the game default - gift to Hades With Persephone
     - Eurydice, Patroclus, Sisyphus and Thanatos gifting will be introduced with the Hades_Biomes mod.
