@@ -1,6 +1,9 @@
 # Changelog
 
 ## [Unreleased]
+
+## [2.5.1] - 2025-11-08
+
 - Moved Thanatos to Shared Keepsake Port
 - Reduced Package Size in Half
 - Added Clear Effects for Thanatos
@@ -46,7 +49,8 @@
 
 - Added 3 God Keepsakes from Hades 1, Hermes, Thanatos and Persephone
 
-[unreleased]: https://github.com/excellent-ae/zannc-KeepsakePort/compare/2.5.0...HEAD
+[unreleased]: https://github.com/excellent-ae/zannc-KeepsakePort/compare/2.5.1...HEAD
+[2.5.1]: https://github.com/excellent-ae/zannc-KeepsakePort/compare/2.5.0...2.5.1
 [2.5.0]: https://github.com/excellent-ae/zannc-KeepsakePort/compare/2.0.2...2.5.0
 [2.0.2]: https://github.com/zanncdwbl/zannc-KeepsakePort/compare/2.0.1...2.0.2
 [2.0.1]: https://github.com/zanncdwbl/zannc-KeepsakePort/compare/2.0.0...2.0.1
