@@ -5,7 +5,7 @@ schemaVersion = "0.0.1"
 [package]
 namespace = "zannc"
 name = "KeepsakePort"
-versionNumber = "2.5.0"
+versionNumber = "2.5.1"
 description = "Porting Keepsakes over from Hades 1 to Hades 2."
 websiteUrl = "https://github.com/zanncdwbl/zannc-KeepsakePort"
 containsNsfwContent = false
@@ -43,7 +43,7 @@ target = "./plugins_data"
 
 [publish]
 repository = "https://thunderstore.io"
-communities = [ "hades-ii", ]
+communities = ["hades-ii"]
 
 [publish.categories]
-hades-ii = [ "mods", ]
+hades-ii = ["mods"]

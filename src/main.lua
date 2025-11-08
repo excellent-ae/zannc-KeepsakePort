@@ -3,8 +3,8 @@
 
 local mods = rom.mods
 
----@module 'SGG_Modding-ENVY-auto'
-mods["SGG_Modding-ENVY"].auto()
+---@module 'LuaENVY-ENVY-auto'
+mods["LuaENVY-ENVY"].auto()
 
 rom = rom
 _PLUGIN = PLUGIN
@@ -39,16 +39,12 @@ local function on_ready()
 	import("ready.lua")
 	import("sjson.lua")
 
-	if config.Thanatos.Enabled then
-		import("keepsakes/keepsake_thanatos.lua")
-	end
 	if config.Hermes.Enabled then
 		import("keepsakes/keepsake_hermes.lua")
 	end
 	if config.Persephone.Enabled then
 		import("keepsakes/keepsake_persephone.lua")
 	end
-
 	if config.Chaos.Enabled then
 		import("keepsakes/keepsake_chaos.lua")
 	end

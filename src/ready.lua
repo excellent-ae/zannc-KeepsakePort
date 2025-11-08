@@ -9,16 +9,6 @@ modutil.mod.Path.Wrap("SetupMap", function(base)
 	base()
 end)
 
-modutil.mod.Path.Wrap("DamageHero", function(base, victim, triggerArgs)
-	DamageHero_wrap(base, victim, triggerArgs)
-	base(victim, triggerArgs)
-end)
-
-modutil.mod.Path.Wrap("TraitUIActivateTraits", function(base, args)
-	TraitUIActivateTraits_Wrap(base, args)
-	base(args)
-end)
-
 modutil.mod.Path.Wrap("StartEncounterEffects", function(base, encounter)
 	StartEncounterEffects_wrap(base, encounter)
 	base(encounter)
