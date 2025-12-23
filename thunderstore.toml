@@ -5,20 +5,13 @@ schemaVersion = "0.0.1"
 [package]
 namespace = "zannc"
 name = "KeepsakePort"
-versionNumber = "2.5.1"
+versionNumber = "3.0.0"
 description = "Porting Keepsakes over from Hades 1 to Hades 2."
 websiteUrl = "https://github.com/zanncdwbl/zannc-KeepsakePort"
 containsNsfwContent = false
 
 [package.dependencies]
-Hell2Modding-Hell2Modding = "1.0.67"
-SGG_Modding-ModUtil = "4.0.1"
-LuaENVY-ENVY = "1.2.0"
-SGG_Modding-ReLoad = "1.0.2"
-SGG_Modding-SJSON = "1.0.0"
-SGG_Modding-Chalk = "2.1.1"
-zannc-KeepsakeExtender = "1.0.0"
-zannc-SharedKeepsakePort = "1.0.0"
+zannc-SharedKeepsakePort = "2.0.0"
 
 [build]
 icon = "./icon.png"
@@ -37,9 +30,9 @@ target = "./LICENSE"
 source = "./src"
 target = "./plugins"
 
-[[build.copy]]
-source = "./packages"
-target = "./plugins_data"
+# [[build.copy]]
+# source = "./packages"
+# target = "./plugins_data"
 
 [publish]
 repository = "https://thunderstore.io"

@@ -1,6 +1,16 @@
 # Changelog
 
 ## [Unreleased]
+- Added Megaera's Keepsake.
+- Add % increase to Hermes' Keepsake.
+- Remove extra "}" in multiple descriptions.
+- Added decimal places for invulnerability duration in Patroclus' keepsake.
+- DEV: Port all of `KeepsakePort's` code over to `SharedKeepsakePort`.
+- DEV: Code Rewrites.
+- DEV: Remove Bonus Dodge/Speed when unequipping Hermes' Keepsake.
+- DEV: Move from reload, guid-prefixed functions.
+- DEV: Fix Min/Max Requirements.
+- DEV: Hopefully fix Hermes for good with encounter clearing.
 
 ## [2.5.1] - 2025-11-08
 
