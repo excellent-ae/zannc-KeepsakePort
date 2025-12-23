@@ -1,6 +1,9 @@
 # Changelog
 
 ## [Unreleased]
+
+## [3.0.0] - 2025-12-23
+
 - Added Megaera's Keepsake.
 - Add % increase to Hermes' Keepsake.
 - Remove extra "}" in multiple descriptions.
@@ -59,7 +62,8 @@
 
 - Added 3 God Keepsakes from Hades 1, Hermes, Thanatos and Persephone
 
-[unreleased]: https://github.com/excellent-ae/zannc-KeepsakePort/compare/2.5.1...HEAD
+[unreleased]: https://github.com/excellent-ae/zannc-KeepsakePort/compare/3.0.0...HEAD
+[3.0.0]: https://github.com/excellent-ae/zannc-KeepsakePort/compare/2.5.1...3.0.0
 [2.5.1]: https://github.com/excellent-ae/zannc-KeepsakePort/compare/2.5.0...2.5.1
 [2.5.0]: https://github.com/excellent-ae/zannc-KeepsakePort/compare/2.0.2...2.5.0
 [2.0.2]: https://github.com/zanncdwbl/zannc-KeepsakePort/compare/2.0.1...2.0.2
