@@ -11,7 +11,7 @@ websiteUrl = "https://github.com/zanncdwbl/zannc-KeepsakePort"
 containsNsfwContent = false
 
 [package.dependencies]
-zannc-SharedKeepsakePort = "2.0.0"
+zannc-SharedKeepsakePort = "1.1.0"
 
 [build]
 icon = "./icon.png"
