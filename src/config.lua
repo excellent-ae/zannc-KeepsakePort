@@ -1,7 +1,7 @@
 ---@meta zannc-KeepsakePort-config
 local config = {
 	enabled = true,
-	-- enableGifting = false,
+	enableGifting = false,
 
 	Hermes = {
 		Enabled = true,
