@@ -40,9 +40,13 @@ local descriptions = {
 		a_KeepsakeCommon = "Increase value to increase dodge and movespeed gained per room, decrease for opposite effect.\nExample: 2.0 will set bonus to +2.0% per room, 0.5 will set it to +0.5% per room",
 	},
 
+	Megaera = {
+		Enabled = "Set to true to enable keepsake, false to disable.\nNOTE: When disabling keepsakes, make sure you unequip them and save your game",
+		a_KeepsakeCommon = "Increase value to increase damage, decrease for opposite effect.\nExample: 3.0 will set bonus to 60%, 0.5 will set it to +10%",
+	},
+
 	Persephone = {
 		Enabled = "Set to true to enable keepsake, false to disable.\nNOTE: When disabling keepsakes, make sure you unequip them and save your game\nNOTE 2: There is no config for persephone because it will be prone to breaking.",
-		a_KeepsakeCommon = "Increase value to increase damage, decrease for opposite effect.\nExample: 3.0 will set bonus to 60%, 0.5 will set it to +10%",
 	},
 }
 
