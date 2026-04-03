@@ -11,8 +11,9 @@ A mod which ports over Thanatos', Hermes', Megaera's, Persephone's, Eurydice's, 
   - Eurydice
   - Patroclus
   - Sisyphus
+    Orpheus
 
 ## Gifting Options
   - Hermes functions the same as the game default.
   - Persephone functions the same as the game default - gift to Hades With Persephone
-  - Eurydice, Patroclus, Sisyphus and Thanatos gifting is handled inside of [Zagreus' Journey](https://thunderstore.io/c/hades-ii/p/NikkelM/Zagreus_Journey/)
+  - Eurydice, Patroclus, Sisyphus, Megaera, Orpheus and Thanatos gifting is handled inside of [Zagreus' Journey](https://thunderstore.io/c/hades-ii/p/NikkelM/Zagreus_Journey/)
