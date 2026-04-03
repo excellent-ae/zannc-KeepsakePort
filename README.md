@@ -11,7 +11,7 @@ A mod which ports over Thanatos', Hermes', Megaera's, Persephone's, Eurydice's, 
   - Eurydice
   - Patroclus
   - Sisyphus
-    Orpheus
+  - Orpheus
 
 ## Gifting Options
   - Hermes functions the same as the game default.
