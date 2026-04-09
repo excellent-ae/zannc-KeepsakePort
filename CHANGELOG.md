@@ -2,6 +2,8 @@
 
 ## [Unreleased]
 
+- Moved Megaera's keepsake from `KeepsakePort` to `SharedKeepsakePort`.
+
 ## [3.0.0] - 2025-12-23
 
 - Added Megaera's Keepsake.
