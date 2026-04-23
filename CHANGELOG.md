@@ -2,6 +2,8 @@
 
 ## [Unreleased]
 
+## [3.0.1] - 2026-04-23
+
 - Moved Megaera's keepsake from `KeepsakePort` to `SharedKeepsakePort`.
 
 ## [3.0.0] - 2025-12-23
@@ -64,7 +66,8 @@
 
 - Added 3 God Keepsakes from Hades 1, Hermes, Thanatos and Persephone
 
-[unreleased]: https://github.com/excellent-ae/zannc-KeepsakePort/compare/3.0.0...HEAD
+[unreleased]: https://github.com/excellent-ae/zannc-KeepsakePort/compare/3.0.1...HEAD
+[3.0.1]: https://github.com/excellent-ae/zannc-KeepsakePort/compare/3.0.0...3.0.1
 [3.0.0]: https://github.com/excellent-ae/zannc-KeepsakePort/compare/2.5.1...3.0.0
 [2.5.1]: https://github.com/excellent-ae/zannc-KeepsakePort/compare/2.5.0...2.5.1
 [2.5.0]: https://github.com/excellent-ae/zannc-KeepsakePort/compare/2.0.2...2.5.0
