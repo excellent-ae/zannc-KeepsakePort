@@ -1,7 +1,7 @@
 # Keepsake Port
-A mod which ports over Thanatos', Hermes', Megaera's, Persephone's, Eurydice's, Patroclus' and Sisyphus' keepsakes from Hades 1 to Hades 2.<br>
+A mod which ports over keepsakes from Hades 1 to Hades 2.<br>
 
-<img width="824" height="183" alt="Hades2_I8B3U6LhWG" src="https://github.com/user-attachments/assets/6426b6bf-fc1e-4f47-8de3-ef4c57e1b662" />
+<img alt="Hades2_I8B3U6LhWG" src="https://github.com/user-attachments/assets/b6b1362d-f4d3-4c5e-896b-e028a86752bb" />
 
 ## Currently Added:
   - Thanatos
@@ -12,8 +12,9 @@ A mod which ports over Thanatos', Hermes', Megaera's, Persephone's, Eurydice's, 
   - Patroclus
   - Sisyphus
   - Orpheus
+  - Achilles
 
 ## Gifting Options
   - Hermes functions the same as the game default.
   - Persephone functions the same as the game default - gift to Hades With Persephone
-  - Eurydice, Patroclus, Sisyphus, Megaera, Orpheus and Thanatos gifting is handled inside of [Zagreus' Journey](https://thunderstore.io/c/hades-ii/p/NikkelM/Zagreus_Journey/)
+  - Eurydice, Patroclus, Sisyphus, Megaera, Orpheus, Thanatos & Achilles gifting is handled inside of [Zagreus' Journey](https://thunderstore.io/c/hades-ii/p/NikkelM/Zagreus_Journey/)
