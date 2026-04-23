@@ -1,7 +1,7 @@
 # Keepsake Port
 A mod which ports over keepsakes from Hades 1 to Hades 2.<br>
 
-<img alt="Hades2_I8B3U6LhWG" src="https://github.com/user-attachments/assets/b6b1362d-f4d3-4c5e-896b-e028a86752bb" />
+<img width="1053" height="174" alt="Hades2_TVngCY3cZ4" src="https://github.com/user-attachments/assets/42bbe954-4947-4326-9b54-178a1e6a103a" />
 
 ## Currently Added:
   - Thanatos
